@@ -1,0 +1,72 @@
+.weekly-shopping-verification-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weekly-shopping-verification-container h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="number"],
+  input[type="date"],
+  input[type="text"],
+  select,
+  button {
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  input[type="text"]:focus,
+  select:focus,
+  button:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .weekly-shopping-verification-container {
+      padding: 1rem;
+    }
+  
+    form {
+      gap: 8px;
+    }
+  
+    input[type="number"],
+    input[type="date"],
+    input[type="text"],
+    select,
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  

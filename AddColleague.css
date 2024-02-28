@@ -1,0 +1,106 @@
+/* AddColleague.css - Adjusted for wider layout components and enhanced success message */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(45deg, #9393f0 0%, #e548ee 100%);
+  color: #1b1010;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.add-colleague-layout {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px; /* Adjusted gap between components */
+  margin-top: 20px; /* Space from the top */
+  padding: 20px 0; /* Top and bottom padding */
+}
+
+.instruction-container {
+  flex: 0 1 550px; /* Increased flexible basis for the image container */
+}
+
+.instruction-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.add-colleague-container {
+  flex: 0 1 550px; /* Increased flexible basis for the form container */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-colleague-container h2, .add-colleague-container form, .add-colleague-container input, 
+.add-colleague-container button, .navigation-buttons, .navigate-button {
+  /* Ensure other styles are defined as needed */
+}
+
+.add-colleague-container input, .add-colleague-container button {
+  padding: 10px;
+  margin: 4px 0; /* Adjusted margin for spacing */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.add-colleague-container button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-colleague-container button:hover {
+  background-color: #0056b3;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigate-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .add-colleague-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .instruction-container, .add-colleague-container {
+    flex-basis: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Enhanced success message styling with increased size */
+.success-message {
+  font-size: 50px; /* Significantly increase font size */
+  color: green; /* Change the text color to green for visibility */
+  margin-top: 20px; /* Add some space above the message */
+  font-weight: bold; /* Make the font bold */
+  text-align: center; /* Center the message */
+  padding: 20px; /* Increase padding around the text */
+  border: 3px solid green; /* Make the border thicker */
+  border-radius: 8px; /* Slightly increase the border radius */
+  background-color: #e6ffe6; /* Add a light green background */
+  display: inline-block; /* Adjust display to inline-block */
+  margin: 20px auto; /* Center the message box */
+  width: auto; /* Allow the box to grow with the text */
+}

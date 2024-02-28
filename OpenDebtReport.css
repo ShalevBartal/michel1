@@ -1,0 +1,65 @@
+.open-debt-report-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.open-debt-report-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.open-debt-report-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.open-debt-report-container table,
+.open-debt-report-container th,
+.open-debt-report-container td {
+  border: 1px solid #ddd;
+}
+
+.open-debt-report-container th,
+.open-debt-report-container td {
+  padding: 12px;
+  text-align: left;
+}
+
+.open-debt-report-container th {
+  background-color: #004085; /* Adjusted to match other reports */
+  color: white;
+}
+
+.open-debt-report-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.open-debt-report-container tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Added styles for the search input */
+.open-debt-report-container .search-input {
+  font-family: Arial, sans-serif;
+  width: 100%; /* Adjust width as needed */
+  padding: 10px;
+  margin-bottom: 20px; /* Space between search box and table */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+/* Styling for the search input focus state */
+.open-debt-report-container .search-input:focus {
+  outline: none;
+  border-color: #004085;
+  box-shadow: 0 0 5px rgba(0, 64, 133, 0.5);
+}

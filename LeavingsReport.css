@@ -1,0 +1,68 @@
+.leavings-report-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px; /* If you want the container to have a fixed max-width */
+  margin: 2rem auto; /* Centers the container */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Ensures the background is white */
+  border-radius: 8px; /* Adds rounded corners */
+}
+
+.leavings-report-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leavings-report-container .filters {
+  display: flex;
+  justify-content: center; /* Center align the filters */
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.leavings-report-container .filters label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.leavings-report-container .filters input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.leavings-report-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.leavings-report-container table thead {
+  background-color: #004085;
+  color: white;
+}
+
+.leavings-report-container table th,
+.leavings-report-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.leavings-report-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Optional: If your table needs to be scrollable when content overflows */
+.leavings-report-container .table-wrapper {
+  overflow-x: auto;
+}
+
+/* Apply hover effect for rows, if desired */
+.leavings-report-container table tr:hover {
+  background-color: #e9ecef;
+}

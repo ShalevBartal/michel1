@@ -1,0 +1,63 @@
+.vacant-rooms-report-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.vacant-rooms-report-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.vacant-rooms-report-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vacant-rooms-report-container table, 
+.vacant-rooms-report-container th, 
+.vacant-rooms-report-container td {
+  border: 1px solid #ddd;
+}
+
+.vacant-rooms-report-container th, 
+.vacant-rooms-report-container td {
+  padding: 12px;
+  text-align: left;
+}
+
+.vacant-rooms-report-container th {
+  background-color: #004085;
+  color: white;
+}
+
+.vacant-rooms-report-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.vacant-rooms-report-container tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Added styles for the search input */
+.vacant-rooms-report-container .search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.vacant-rooms-report-container .search-input:focus {
+  outline: none;
+  border-color: #004085;
+  box-shadow: 0 0 5px rgba(0, 64, 133, 0.5);
+}

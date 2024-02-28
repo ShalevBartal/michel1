@@ -1,0 +1,107 @@
+.home-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  background-color: #f4f7fa; /* Lighter blue background for a modern look */
+}
+
+.header-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3; /* Subtle division below header */
+}
+
+.logo {
+  max-width: 350px;
+  height: auto;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #4a90e2; /* Blue that complements the background */
+}
+
+.system-summary p {
+  font-size: 1.5em; /* Slightly smaller than the h2 for visual hierarchy */
+  color: #555; /* A darker grey for readability */
+  max-width: 800px; /* Set a max-width for optimal reading length */
+  margin: 20px auto; /* Center the paragraph in the container */
+  line-height: 1.6; /* Increase line-height for readability */
+}
+
+.interactive-element {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e8e8e8; /* Light grey for interactive section */
+}
+
+.image-gallery {
+  display: flex; /* Aligns images in a row */
+  justify-content: center; /* Centers images in the container */
+  gap: 10px; /* Adds space between the images */
+  margin-top: 20px; /* Adds space between the summary and the image gallery */
+  flex-wrap: wrap; /* Allows images to wrap onto the next line if space is insufficient */
+}
+
+.gallery-img {
+  width: 10%; /* Makes each image smaller, adjust as needed */
+  height: auto; /* Keeps the aspect ratio of the images */
+  object-fit: contain; /* Ensures that images are scaled correctly within the element's box */
+}
+
+.featured-content {
+  margin-top: 30px;
+}
+
+.featured-content h3 {
+  color: #4a90e2;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.featured-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featured-content li {
+  margin-bottom: 10px;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #4a90e2; /* Blue links for consistency */
+  transition: color 0.3s ease;
+}
+
+.article-link:hover {
+  color: #527ba7; /* Darker shade of blue for hover */
+  text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .gallery-img {
+    width: 48%; /* Two images per row on smaller screens */
+    margin-bottom: 10px; /* Adds space between stacked images */
+  }
+  
+  .image-gallery {
+    flex-direction: column; /* Stacks images on top of each other on smaller screens */
+    justify-content: space-around; /* Distributes space around items for a cleaner look */
+  }
+
+  h1, p, .article-link, .system-summary p {
+    font-size: 1em; /* Adjusts font sizes for smaller screens */
+  }
+}
+
+/* Further responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .gallery-img {
+    width: 90%; /* Full width for very small screens */
+    margin-bottom: 10px; /* Adds space between images */
+  }
+}

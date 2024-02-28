@@ -1,0 +1,46 @@
+/* ExtraordinaryHousesBudget.css - Style for the "Extraordinary Houses (Budget)" form page */
+
+.extraordinary-houses-budget-container {
+    max-width: 400px;
+    margin: 50px auto; /* Adds space at the top and centers the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.extraordinary-houses-budget-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.extraordinary-houses-budget-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.extraordinary-houses-budget-container input,
+.extraordinary-houses-budget-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.extraordinary-houses-budget-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.extraordinary-houses-budget-container button:hover {
+    background-color: #0056b3;
+}
+
+.extraordinary-houses-budget-container .matching-houses {
+    margin-top: 20px;
+    text-align: center;
+}

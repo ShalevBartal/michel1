@@ -1,0 +1,73 @@
+.joining-soldiers-report-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.joining-soldiers-report-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.joining-soldiers-report-container .filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.joining-soldiers-report-container .filters label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.joining-soldiers-report-container .filters input[type="date"],
+.joining-soldiers-report-container .filters input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.joining-soldiers-report-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.joining-soldiers-report-container table thead {
+    background-color: #004085;
+    color: white;
+}
+
+.joining-soldiers-report-container table th,
+.joining-soldiers-report-container table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.joining-soldiers-report-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.joining-soldiers-report-container table tr:hover {
+    background-color: #e9ecef;
+}

@@ -1,0 +1,69 @@
+/* CSS content for MonthlyPaymentVerification component with added space at the top and larger buttons */
+
+.monthly-payment-verification-container {
+  max-width: 600px;
+  margin: 50px auto; /* Adds space at the top */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 15px 20px !important; /* Increased padding for larger buttons */
+  background-color: #007bff !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 1.2rem !important; /* Increased font size for better visibility */
+  transition: background-color 0.3s ease !important;
+}
+
+button:hover {
+  background-color: #0056b3 !important;
+}
+
+.success-message, .error-message {
+  color: #28a745; /* Green for success message */
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #dc3545; /* Red for error message */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .monthly-payment-verification-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    font-size: 0.9rem !important; /* Adjusted for smaller screens */
+  }
+}

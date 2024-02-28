@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34; /* Dark header background */
+  padding: 20px 0; /* Increased padding to make the header thicker */
+}
+
+.App-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-nav li {
+  margin: 0 10px; /* Increased margin for more space between menu items */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.7em; /* Increased font size for larger text */
+  padding: 10px 15px; /* Increased padding for a larger clickable area */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App-link:hover {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.error-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  padding: 40px;
+  background-color: #f8f4f5;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  border: 1px solid white;
+  /* The font-size for .error-message should not be 50em as it's too large.
+     You may adjust it to a reasonable size, like 1.2em, or as needed. */
+  font-size: 1.2em; 
+}
+
+@media (max-width: 768px) {
+  .App-link {
+    font-size: 1em; /* Adjusted font size for mobile */
+  }
+
+  .error-message {
+    width: 90%;
+    padding: 20px;
+    font-size: 1.2em; /* Adjusted font size for mobile */
+  }
+}

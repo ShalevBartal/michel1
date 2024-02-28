@@ -1,0 +1,33 @@
+/* Container for the pie charts */
+.pie-chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white; /* Set the background to white */
+}
+
+/* Styles applied to each individual chart */
+.chart {
+  flex: 1 1 30%; /* Allows the charts to grow and wrap as needed, with a base width */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 10px; /* Spacing around each chart */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around each chart for depth */
+  padding: 20px; /* Padding around the chart */
+  background-color: #ffffff; /* Ensures each chart has a white background */
+}
+
+/* Adjustments for medium screens (two charts per row) */
+@media (max-width: 768px) {
+  .chart {
+    flex-basis: 45%; /* Adjust to make two charts per row on medium screens */
+  }
+}
+
+/* Adjustments for smaller screens (stack charts vertically) */
+@media (max-width: 480px) {
+  .chart {
+    flex-basis: 100%; /* Adjust to stack charts vertically on small screens */
+  }
+}

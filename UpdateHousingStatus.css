@@ -1,0 +1,115 @@
+.update-housing-status-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-housing-status-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-housing-status-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style adjustments for TextField and IconButton */
+.update-housing-status-container .MuiTextField-root {
+  margin: normal;
+  position: relative;
+}
+
+/* Override default Material-UI input styles */
+.update-housing-status-container .MuiInputBase-root {
+  /* Remove borders and shadows */
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Override styles for when the TextField is focused */
+.update-housing-status-container .MuiInputBase-root.Mui-focused {
+  /* Remove the border that appears on focus */
+  border: none;
+  box-shadow: none;
+}
+
+/* Override the notched outline for outlined inputs if necessary */
+.update-housing-status-container .MuiOutlinedInput-notchedOutline {
+  /* Remove border and outline */
+  border: none;
+}
+
+/* Apply consistent border to the input fields directly */
+.update-housing-status-container .MuiInputBase-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  /* Important to apply when you have a background color */
+  background-color: white;
+}
+
+/* Ensure the adornment does not carry any border */
+.update-housing-status-container .MuiInputAdornment-root {
+  background-color: transparent;
+}
+
+/* Align icons vertically in the center */
+.update-housing-status-container .MuiInputAdornment-root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Button styles */
+.update-housing-status-container .submit-button,
+.navigation-buttons .nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-housing-status-container .submit-button:hover,
+.navigation-buttons .nav-button:hover {
+  background-color: #0056b3;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .navigation-buttons {
+    flex-direction: column;
+  }
+  
+  .navigation-buttons .nav-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .navigation-buttons .nav-button:last-child {
+    margin-bottom: 0;
+  }
+}

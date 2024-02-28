@@ -1,0 +1,42 @@
+/* ManageCoordinator.css - updated to add space between the form and the navigation bar */
+
+.manage-coordinator-container {
+    max-width: 400px;
+    margin: 50px auto; /* Adds 50px of space to the top to push the form down */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.manage-coordinator-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.manage-coordinator-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.manage-coordinator-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.manage-coordinator-container button {
+    font-size: 18px; /* Increased font size for better readability */
+    padding: 15px 20px; /* Increased padding for a larger button appearance */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0; /* Added margin for spacing around buttons */
+}
+
+.manage-coordinator-container button:hover {
+    background-color: #0056b3;
+}
